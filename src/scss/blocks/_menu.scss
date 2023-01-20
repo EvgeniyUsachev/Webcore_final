@@ -1,0 +1,43 @@
+.menu {
+    position: fixed;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    align-items: center; 
+    padding: 18px 16px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 88px;
+    background-color: #FFFFFF; 
+    z-index: 11;
+    width: 100%;
+
+    &__logo {
+        src: url(/src/icons/logo.png);
+    }
+
+    &__divider {
+        width: 2px;
+        height: 32px;
+        background: $light-grey;
+        border-radius: 1px;
+        margin-left: 16px;
+        margin-right: 20px;
+    }
+
+    &__item {
+        &:nth-child(6n+1) {
+        margin-right: 16px;
+        }
+    }
+
+    .visible-320 {
+        display: block;
+    }
+
+    .hidden-320 {
+        display: none;
+    }
+}

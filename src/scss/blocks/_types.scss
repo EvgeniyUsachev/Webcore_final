@@ -1,0 +1,23 @@
+.types {
+    min-height: 310px;
+    min-width: 0;   
+    &__item {
+        height: 160px;
+        align-items:flex-start;
+        text-decoration: none;
+
+        span {
+            color: #1B1C21;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+    }
+
+    &__button {
+        margin-top: 104px;
+    }
+    
+    .swiper {
+        height: 205px;
+    }
+}

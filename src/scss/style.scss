@@ -1,0 +1,67 @@
+
+@import '../css/bootstrap-reboot.min.css' ;
+@import '../css/normalize.css' ;
+@import './base/variables.scss'; 
+
+
+
+// @import './src/scss/base/bootstrap-reboot.min.css' ;
+
+
+
+
+
+* {
+    box-sizing: border-box; 
+    font-family: 'TT Lakes';
+}
+
+body {
+    background-color: $background-grey;  
+    position: relative;
+
+}
+.body--fixed {
+    position: fixed;
+}
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+.flex-wrapper {
+    display: flex;
+    max-width: 1440px;
+    flex-direction: column;
+   
+}
+.container {
+    max-width: 1120px;
+}
+
+
+
+@import '../scss/blocks/burger.scss' ;
+@import './blocks/menu.scss' ;
+@import './src/scss/base/fonts.scss' ;
+@import './src/scss/blocks/services' ;
+@import './src/scss/blocks/show-more' ;
+@import './src/scss/blocks/menu-button' ;
+@import './src/scss/blocks/burger-menu' ;
+@import './src/scss/blocks/brands' ;
+@import './src/scss/blocks/types' ;
+@import './src/scss/blocks/prices' ;
+@import './src/scss/blocks/order-button' ;
+@import './src/scss/blocks/footer' ;
+@import './src/scss/blocks/modal' ;
+@import './src/scss/blocks/gradient' ;
+@import './src/scss/blocks/swiper' ;
+@import './src/scss/blocks/overlay' ;
+
+
+
+
+
+@import './src/scss/base/media'; 

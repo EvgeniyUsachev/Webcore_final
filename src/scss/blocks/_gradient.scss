@@ -1,0 +1,23 @@
+.gradient {
+    position: absolute;
+    width: 24px;
+    height: 81px;
+    right: 0;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    border: none;
+    z-index: 5;
+
+    &--brands {
+        top: 87px;
+    }
+
+    &--types {
+        height: 180px;
+        top: 87px;
+    }
+
+    &--prices {
+        height: 200px;
+        top: 77px;
+    }
+}

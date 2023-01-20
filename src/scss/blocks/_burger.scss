@@ -1,0 +1,42 @@
+.burger {
+    margin-right: 16px;
+    &__icon {
+        span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background-color:white; 
+            margin-top: 12px;
+            border-radius: 1px;
+            margin: 0 auto; 
+            position: relative; 
+            &:nth-child(2) {
+                margin-top: 5px;
+                width: 10px;
+                margin-right: 8px;
+            }
+            &:nth-child(3) {
+                margin-top: 5px;
+                width: 14px;
+                margin-right: 4px;
+            }
+        }
+    }
+    &--crossed {
+        span {
+            transform: translateY(3px) rotate(-45deg);
+            margin:0;
+            width: 25px;
+            margin: 0 auto;
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: translateY(1px) rotate(45deg);
+                width: 25px;
+                margin:0;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}

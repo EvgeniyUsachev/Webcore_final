@@ -1,0 +1,22 @@
+.swiper, .swiper-price {
+    margin-top: 16px;
+    margin-left: 16px;
+    height: 117px;
+    .swiper-pagination-bullet-active {
+        background: #B5B6BC;
+        height: 12px;
+        width: 12px;
+    } 
+    .swiper-pagination-bullet {
+        color: #DDDDDD;
+        height: 12px;
+        width: 12px;
+    } 
+    .swiper-wrapper {
+        padding: 0;
+    }
+    .swiper-slide {
+        // width: 240px !important;
+    }
+    
+}

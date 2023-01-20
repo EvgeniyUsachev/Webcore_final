@@ -1,0 +1,26 @@
+.order-button, .send-button {
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    background: $pink;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border:none;
+    font-weight: 600;
+    transition: all 0.5s;
+
+    img {
+        margin-left: 17px;
+    }
+
+    &--hidden {
+        display: none;
+    }
+    &:hover, :focus {
+        box-shadow: 0 0 20px 5px $pink;
+        background-color: $green; 
+    }
+}

@@ -1,0 +1,73 @@
+.brands{
+    scroll-margin-top: 88px;
+    min-height: 220px;  
+    background-color: $background-grey;
+    position: relative;
+    min-width: 0;
+    .container {
+        margin: 0 auto;
+    }
+    .hidden-320 {
+        display: none;
+    }
+
+    &__header, .subheader {
+        height: 80px;
+        background: linear-gradient(to right, #F8F8F8 1.39%, #FFFFFF 100%);
+        border-top: solid 1px #D9FFF5;
+        h2 {
+            font-size: 16px;
+            letter-spacing: -0.2px;
+            color: $grey;
+            text-transform: uppercase;
+            margin: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        height: 72px;
+        border: 1px solid $light-grey;
+        border-radius: 6px;
+        background-color:white;
+        align-items:center;
+        padding-left: 16px;
+        justify-content: space-between;
+        cursor: pointer;
+        &:hover, :focus {
+            .brands__button {
+            transition: all 0.8s;
+            background-color:$green;
+            }
+        }
+    }
+    
+    &__button {
+        height: 40px;
+        width: 40px;
+        border:solid 2px $pink;
+        border-radius: 50%;
+        background-color: inherit;
+        padding:0;
+        margin-right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    &__gradient {
+        position: absolute;
+        width: 24px;
+        height: 81px;
+        right: 0;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        border: none;
+        top: 87px;
+        z-index: 5;
+    }
+   
+    li {
+        list-style: none;
+    }
+}

@@ -1,0 +1,80 @@
+.prices {
+    min-width: 0;  
+    min-height: 305px;
+    .swiper {
+        height: 250px;
+        margin-top: 10px;
+        
+    }
+    
+    &__header, .subheader {
+        height: 56px;
+    }
+
+    &__item {
+        min-width: 0;  
+        height: 200px;
+        display: block;
+        padding: 16px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:flex-start;
+        &:first-child {
+            display: none;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__subheader {
+        font-size: 14px;
+        color: $grey;
+        opacity: 0.72;
+    }
+
+    &__info {
+        font-size: 14px;
+        color: $main-text-color;
+        letter-spacing: 0.2px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        width:100%;
+    }
+
+    &__tax {
+        margin: 0 16px;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        color: $main-text-color;
+    }
+
+    &__offer {
+        margin: 0 16px;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+        font-weight: 600;
+        margin-top: 20px;
+        a {
+        text-decoration: none;
+        color: $main-text-color;
+        &::after {
+            content:url(../img/arrow_right_pink.svg);
+            margin-left: 10px;
+        }
+        }
+    }
+    
+}

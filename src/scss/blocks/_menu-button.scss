@@ -1,0 +1,33 @@
+.menu-button {
+    width: 40px;
+    height: 40px;
+    background-color:$pink; 
+    border-radius: 100%; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+    border:none; 
+    transition: all 0.5s;
+    &:hover, &:focus {
+        box-shadow: 0 0 20px 5px $pink;
+        background-color: #41F6D7; 
+    }
+
+    &--crossed {
+        display: block;
+        padding-bottom: 0px;
+        span {
+            display: block;
+            position: relative; 
+            transform: translateY(0px)  rotate(-45deg);
+            background-color: white;
+            height: 2px;
+            width: 25px;
+            margin: 0 auto;
+            &:nth-child(2) {
+                transform: translateY(-2px) rotate(45deg);
+            }
+        }
+    }
+}
